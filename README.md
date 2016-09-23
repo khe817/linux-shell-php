@@ -12,7 +12,7 @@ Class for executing linux shell commands
 
 ```
 #!php
-
+<?php
 require 'class.LinuxShell.php';
 ```
 
@@ -24,7 +24,7 @@ Initialize:
 
 ```
 #!php
-
+<?php
 // Set working dir path if any,
 // If no working dir path is set, current __DIR__ where the class is called is used
 $working_dir = 'true/path/to/working-dir';
@@ -36,7 +36,7 @@ Run commands:
 
 ```
 #!php
-
+<?php
 $linux_shell->run_command('cp -r src_dir/. dest_dir/');
 
 $linux_shell->run_command('ln -s /home/user_name/src_dir/ /home/user_name/dest_dir');
