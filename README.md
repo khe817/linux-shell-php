@@ -10,9 +10,7 @@ Class for executing linux shell commands
 ### How do I get set up? ###
 
 
-```
-#!php
-<?php
+```php
 require 'class.LinuxShell.php';
 ```
 
@@ -22,9 +20,7 @@ See examples.php for full examples.
 Initialize:
 
 
-```
-#!php
-<?php
+```php
 // Set working dir path if any,
 // If no working dir path is set, current __DIR__ where the class is called is used
 $working_dir = 'true/path/to/working-dir';
@@ -34,9 +30,7 @@ $linux_shell = new LinuxShell($working_dir);
 Run commands:
 
 
-```
-#!php
-<?php
+```php
 $linux_shell->run_command('cp -r src_dir/. dest_dir/');
 
 $linux_shell->run_command('ln -s /home/user_name/src_dir/ /home/user_name/dest_dir');
